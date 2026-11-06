@@ -1,0 +1,46 @@
+{
+  "findrisc": {
+    "age": [
+      {"min":null,"max":45,"max_inclusive":false,"score":0},
+      {"min":45,"max":55,"max_inclusive":false,"score":2},
+      {"min":55,"max":65,"max_inclusive":false,"score":3},
+      {"min":65,"max":null,"min_inclusive":true,"score":4}
+    ],
+    "bmi": [
+      {"min":null,"max":25,"max_inclusive":false,"score":0},
+      {"min":25,"max":30,"max_inclusive":false,"score":1},
+      {"min":30,"max":null,"min_inclusive":true,"score":3}
+    ],
+    "waist_male": [
+      {"min":null,"max":94,"max_inclusive":false,"score":0},
+      {"min":94,"max":102,"min_inclusive":true,"max_inclusive":true,"score":3},
+      {"min":102,"max":null,"min_inclusive":false,"score":4}
+    ],
+    "waist_female": [
+      {"min":null,"max":80,"max_inclusive":false,"score":0},
+      {"min":80,"max":88,"min_inclusive":true,"max_inclusive":true,"score":3},
+      {"min":88,"max":null,"min_inclusive":false,"score":4}
+    ],
+    "physical_activity":{"si":0,"no":2},
+    "fruit_vegetables":{"diario":0,"no_diario":1},
+    "antihypertensive":{"si_medicacion":2,"si_sin_medicacion":0,"no":0},
+    "high_glucose":{"si":5,"no":0},
+    "family_history":{"ninguno":0,"segundo_grado":3,"primer_grado":5},
+    "interpretation":[
+      {"min":0,"max":6,"label":"Riesgo bajo"},
+      {"min":7,"max":11,"label":"Riesgo ligeramente aumentado"},
+      {"min":12,"max":14,"label":"Riesgo moderado"},
+      {"min":15,"max":20,"label":"Riesgo alto"},
+      {"min":21,"max":null,"label":"Riesgo muy alto"}
+    ]
+  },
+  "medas": {
+    "interpretation":[
+      {"min":0,"max":8,"label":"Baja adherencia a la dieta mediterránea"},
+      {"min":9,"max":14,"label":"Buena adherencia a la dieta mediterránea"}
+    ],
+    "items": {
+      "medas_01":{"qualifying_answer":"si","score":1},"medas_02":{"qualifying_answer":"si","score":1},"medas_03":{"qualifying_answer":"si","score":1},"medas_04":{"qualifying_answer":"si","score":1},"medas_05":{"qualifying_answer":"si","score":1},"medas_06":{"qualifying_answer":"si","score":1},"medas_07":{"qualifying_answer":"si","score":1},"medas_08":{"qualifying_answer":"si","score":1},"medas_09":{"qualifying_answer":"si","score":1},"medas_10":{"qualifying_answer":"si","score":1},"medas_11":{"qualifying_answer":"si","score":1},"medas_12":{"qualifying_answer":"si","score":1},"medas_13":{"qualifying_answer":"si","score":1},"medas_14":{"qualifying_answer":"si","score":1}
+    }
+  }
+}

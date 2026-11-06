@@ -1,0 +1,385 @@
+{
+  "campaign_code": "diabetes-2026",
+  "questions": [
+    {
+      "code": "hiperglucemia_previa",
+      "n": 1,
+      "prompt": "¿Alguna vez has registrado una hiperglucemia en tu analítica?",
+      "type": "single_choice",
+      "options": {
+        "si": "Sí",
+        "no": "No"
+      },
+      "required": true
+    },
+    {
+      "code": "diabetes_actual",
+      "n": 2,
+      "prompt": "¿El/la paciente tiene diabetes en la actualidad?",
+      "type": "single_choice",
+      "options": {
+        "si": "Sí",
+        "no": "No"
+      },
+      "required": true
+    },
+    {
+      "code": "diabetes_gestacional",
+      "n": 3,
+      "prompt": "¿Ha sufrido diabetes gestacional?",
+      "type": "single_choice",
+      "options": {
+        "si": "Sí",
+        "no": "No",
+        "masculino": "Paciente masculino"
+      },
+      "required": true
+    },
+    {
+      "code": "antecedentes_familiares",
+      "n": 4,
+      "prompt": "¿Diabetes previa en familiares?",
+      "type": "single_choice",
+      "options": {
+        "primer_grado": "Padres, hermanos o hijos",
+        "segundo_grado": "Abuelos, tíos o primos",
+        "ninguno": "No"
+      },
+      "required": true
+    },
+    {
+      "code": "glucemia",
+      "n": 5,
+      "prompt": "Indica el valor de glucemia recogido:",
+      "type": "decimal",
+      "required": true
+    },
+    {
+      "code": "ultima_comida",
+      "n": 6,
+      "prompt": "¿Hora de última comida?",
+      "type": "single_choice",
+      "options": {
+        "ayunas": "Ayunas",
+        "azar": "Al azar (menos de 2 horas)"
+      },
+      "required": true
+    },
+    {
+      "code": "edad",
+      "n": 7,
+      "prompt": "Indica la edad del paciente",
+      "type": "integer",
+      "unit": "años",
+      "required": true
+    },
+    {
+      "code": "cintura_cm",
+      "n": 8,
+      "prompt": "Indica la circunferencia abdominal del paciente en cm (medida a nivel del vientre, por ejemplo 80.5). Recuerda usar un punto '.' en lugar de coma ',' como separador, si no, ignorará los valores que pongas a la derecha de la coma.",
+      "type": "decimal",
+      "unit": "cm",
+      "required": true
+    },
+    {
+      "code": "peso_kg",
+      "n": 9,
+      "prompt": "Indica el peso del paciente en kg (por ejemplo 80.5). Recuerda usar un punto '.' en lugar de coma ',' como separador, si no, ignorará los valores que pongas a la derecha de la coma.",
+      "type": "decimal",
+      "unit": "kg",
+      "required": true
+    },
+    {
+      "code": "altura_m",
+      "n": 10,
+      "prompt": "Indica la altura del paciente en m (por ejemplo 1.80). Recuerda usar un punto '.' en lugar de coma ',' como separador, si no, ignorará los valores que pongas a la derecha de la coma.",
+      "type": "decimal",
+      "unit": "m",
+      "required": true
+    },
+    {
+      "code": "tabaquismo",
+      "n": 11,
+      "prompt": "¿Tabaquismo?",
+      "type": "single_choice",
+      "options": {
+        "no": "No",
+        "1_10": "Entre 1 y 10 cigarros al mes",
+        "10_20": "Entre 10 y 20 cigarros al mes",
+        "mas_20": "Más de 20 cigarros al mes"
+      },
+      "required": true
+    },
+    {
+      "code": "alcohol",
+      "n": 12,
+      "prompt": "Consumo del alcohol",
+      "type": "single_choice",
+      "options": {
+        "diario": "A diario o casi a diario",
+        "fines": "Solo fines de semana",
+        "ocasional": "Ocasional",
+        "esporadico": "Esporádico",
+        "rara_vez": "Rara vez",
+        "nunca": "Nunca"
+      },
+      "required": true
+    },
+    {
+      "code": "fruta_verdura_diaria",
+      "n": 13,
+      "prompt": "¿Frecuencia de consumo de frutas y verduras?",
+      "type": "single_choice",
+      "options": {
+        "no_diario": "No a diario",
+        "diario": "A diario"
+      },
+      "required": true
+    },
+    {
+      "code": "actividad_fisica",
+      "n": 14,
+      "prompt": "¿Realiza habitualmente al menos 30 minutos diarios de actividad física, en el trabajo y/o en el tiempo libre (incluida la actividad diaria normal)?",
+      "type": "single_choice",
+      "options": {
+        "si": "Sí",
+        "no": "No"
+      },
+      "required": true
+    },
+    {
+      "code": "alteraciones_sueno",
+      "n": 15,
+      "prompt": "¿Alteraciones de sueño?:",
+      "type": "single_choice",
+      "options": {
+        "si": "Sí",
+        "no": "No"
+      },
+      "required": true
+    },
+    {
+      "code": "estres",
+      "n": 16,
+      "prompt": "¿Problemas de estrés?",
+      "type": "single_choice",
+      "options": {
+        "si": "Sí",
+        "no": "No"
+      },
+      "required": true
+    },
+    {
+      "code": "enfermedad_cardiaca",
+      "n": 17,
+      "prompt": "¿Enfermedades cardíacas?",
+      "type": "single_choice",
+      "options": {
+        "si": "Sí",
+        "no": "No"
+      },
+      "required": true
+    },
+    {
+      "code": "hipertension_medicacion",
+      "n": 18,
+      "prompt": "¿Problemas de tensión arterial?",
+      "type": "single_choice",
+      "options": {
+        "si_medicacion": "Sí, con medicación",
+        "si_sin_medicacion": "Sí, sin medicación",
+        "no": "No"
+      },
+      "required": true
+    },
+    {
+      "code": "presion_sistolica",
+      "n": 19,
+      "prompt": "Indica la presión arterial sistólica del paciente en mmHg:",
+      "type": "integer",
+      "unit": "mmHg",
+      "required": true
+    },
+    {
+      "code": "presion_diastolica",
+      "n": 20,
+      "prompt": "Indica la presión arterial diastólica del paciente en mmHg:",
+      "type": "integer",
+      "unit": "mmHg",
+      "required": true
+    },
+    {
+      "code": "medas_01",
+      "n": 21,
+      "prompt": "¿Usa usted el aceite de oliva como principal grasa para cocinar?",
+      "type": "single_choice",
+      "options": {
+        "si": "Sí",
+        "no": "No"
+      },
+      "required": true
+    },
+    {
+      "code": "medas_02",
+      "n": 22,
+      "prompt": "¿Cuánto aceite de oliva consume al día? Incluye freír, ensaladas, fuera de casa.",
+      "type": "single_choice",
+      "options": {
+        "si": "4 o más cucharadas",
+        "no": "Menos de 4 cucharadas"
+      },
+      "required": true
+    },
+    {
+      "code": "medas_03",
+      "n": 23,
+      "prompt": "¿Cuántas raciones de verdura u hortalizas consume? (Las guarniciones o acompañamientos=media ración) 1 RACIÓN = 200 GRAMOS (Al menos una de ellas en ensalada o crudas)",
+      "type": "single_choice",
+      "options": {
+        "si": "2 o más",
+        "no": "Menos de 2"
+      },
+      "required": true
+    },
+    {
+      "code": "medas_04",
+      "n": 24,
+      "prompt": "¿Cuántas piezas de fruta consume al día? También debe incluir en su cálculo al zumo natural.",
+      "type": "single_choice",
+      "options": {
+        "si": "3 o más al día",
+        "no": "Menos de 3"
+      },
+      "required": true
+    },
+    {
+      "code": "medas_05",
+      "n": 25,
+      "prompt": "¿Cuántas raciones de carnes rojas, hamburguesas, salchichas o embutidos come? (RACIÓN 100-150GR)",
+      "type": "single_choice",
+      "options": {
+        "si": "Menos de una al día",
+        "no": "Una al día o más"
+      },
+      "required": true
+    },
+    {
+      "code": "medas_06",
+      "n": 26,
+      "prompt": "¿Cuántas raciones de mantequilla, margarina o nata consume? (PORCIÓN INDIVIDUAL 12GR)",
+      "type": "single_choice",
+      "options": {
+        "si": "Menos de una al día",
+        "no": "Una al día o más"
+      },
+      "required": true
+    },
+    {
+      "code": "medas_07",
+      "n": 27,
+      "prompt": "¿Cuántas bebidas carbonatadas y/o azucaradas consume al día? Entre las bebidas de este tipo se consideran los refrescos, colas, tónicas o similares.",
+      "type": "single_choice",
+      "options": {
+        "si": "Menos de una al día",
+        "no": "Una al día o más"
+      },
+      "required": true
+    },
+    {
+      "code": "medas_08",
+      "n": 28,
+      "prompt": "¿Bebe usted vino? ¿Cuánto consume a la semana? (VASOS DE 100CC)",
+      "type": "single_choice",
+      "options": {
+        "si": "7 o más vasos a la semana",
+        "no": "Menos de 7 vasos a la semana"
+      },
+      "required": true
+    },
+    {
+      "code": "medas_09",
+      "n": 29,
+      "prompt": "¿Cuántas raciones de legumbres consume a la semana? Entre la legumbres se encuentran los guisantes, judías, habas, lentejas o soja (1 plato o ración de 150gr en seco 40gr)",
+      "type": "single_choice",
+      "options": {
+        "si": "3 o más a la semana",
+        "no": "Menos de 3"
+      },
+      "required": true
+    },
+    {
+      "code": "medas_10",
+      "n": 30,
+      "prompt": "¿Cuántas raciones de pescado-mariscos consume a la semana? (Un planto de 100-150gr de pescado)",
+      "type": "single_choice",
+      "options": {
+        "si": "3 o más a la semana",
+        "no": "Menos de 3 a la semana"
+      },
+      "required": true
+    },
+    {
+      "code": "medas_11",
+      "n": 31,
+      "prompt": "¿Cuántas veces come repostería comercial como galletas, flanes, dulce o pasteles? Solo se refiere a la repostería no casera.",
+      "type": "single_choice",
+      "options": {
+        "si": "Menos de 3 a la semana",
+        "no": "3 o más a la semana"
+      },
+      "required": true
+    },
+    {
+      "code": "medas_12",
+      "n": 32,
+      "prompt": "¿Cuántas veces come frutos secos? (RACIÓN DE 30GR)",
+      "type": "single_choice",
+      "options": {
+        "si": "3 o más a la semana",
+        "no": "Menos de 3"
+      },
+      "required": true
+    },
+    {
+      "code": "medas_13",
+      "n": 33,
+      "prompt": "¿Consume usted preferentemente carne de pollo, pavo o conejo en vez de ternera, cerdo, hamburguesas o salchichas? (Carne de pollo una ración de 100-150gramos)",
+      "type": "single_choice",
+      "options": {
+        "si": "Sí",
+        "no": "No"
+      },
+      "required": true
+    },
+    {
+      "code": "medas_14",
+      "n": 34,
+      "prompt": "¿Cuántas veces a la semana consume los vegetales cocinados, la pasta, arroz u otros platos aderezados con salsa de tomate, ajo, cebolla o puerro elaborada a fuego lento con aceite de oliva (sofrito)?",
+      "type": "single_choice",
+      "options": {
+        "si": "2 o más a la semana",
+        "no": "Menos de 2 a la semana"
+      },
+      "required": true
+    },
+    {
+      "code": "sexo",
+      "n": null,
+      "prompt": "Sexo biológico",
+      "type": "single_choice",
+      "options": {
+        "hombre": "Hombre",
+        "mujer": "Mujer"
+      },
+      "required": true
+    },
+    {
+      "code": "tsi",
+      "n": null,
+      "prompt": "TSI",
+      "type": "single_choice",
+      "options_source": "tsi_categories",
+      "required": true
+    }
+  ]
+}
